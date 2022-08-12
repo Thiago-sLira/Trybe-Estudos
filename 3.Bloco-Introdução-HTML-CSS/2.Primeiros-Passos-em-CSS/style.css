@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-
-/* h1 {
+h1 {
     font-size: 65px;
     color: orange;
     font-family: monospace, sans-serif;
@@ -49,21 +40,4 @@ color: white;
 
 .list-style {
     background-color: blue;
-} */
-
-    </style>
-</head>
-
-<body>
-    <h1>Exercícios 3.2</h1>
-    <p class="list-style">Qual é a sua cor favorita?</p>
-    <ul class="list-style" id="unorder-list"> 
-        <li id="Yellow">Amarelo</li>
-        <li id="Red">Vermelho</li>
-        <li id="Brown">Marrom</li>
-    </ul>
-</body>
-
-</html>
-
-<!-- #csszengarden.com/-->
+}
