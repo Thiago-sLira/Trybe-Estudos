@@ -1,0 +1,28 @@
+div {
+    background-color: 244, 244, 244;
+}
+
+.primeiro {
+    color: red;
+}
+
+.segundo {
+    color: yellow;
+}
+
+.terceiro {
+    color: blue;
+    font-size: large;
+}
+
+.quarto {
+    color: green;
+}
+
+.quinto {
+    color: brown;
+}
+
+h3 {
+    font-style: italic;
+}
