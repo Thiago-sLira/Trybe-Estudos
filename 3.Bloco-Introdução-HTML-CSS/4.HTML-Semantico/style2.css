@@ -11,3 +11,11 @@ p {
 table, td {
     border: 1px solid black;
 }
+
+img {
+    width: 300px;
+}
+
+aside {
+    display: inline-block;
+}
