@@ -24,9 +24,10 @@
 
 // // ['Tomar café', 'Reunião', 'Brincar com o cachorro', 'Fazer exercícios da Trybe']
 
-let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+// let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
 
-tasksList.pop();  // remove a última tarefa
-console.log(tasksList);
+// tasksList.pop();  // remove a última tarefa
+// console.log(tasksList);
 
-// [ 'Tomar café', 'Reunião' ]
+// // [ 'Tomar café', 'Reunião' ]
+
