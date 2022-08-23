@@ -38,12 +38,24 @@
 //      else console.log('Valor menor ou igual a 20')
 //     // exercicio 4.
 
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27, 289];
+// let maiorValor = 0;
+
+// for (let index = 0; index < numbers.length; index = index + 1) {
+//     if (numbers[index] > maiorValor) {
+//        maiorValor = numbers[index];
+//     } 
+// }
+// console.log(maiorValor); // exercicio 5
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27, 289];
-let maiorValor = 0;
+let valorImpar = 0;
 
 for (let index = 0; index < numbers.length; index = index + 1) {
-    if (numbers[index] > maiorValor) {
-       maiorValor = numbers[index];
-    } 
+    if (numbers[index] % 2 === 0) {
+       console.log('nenhum valor ímpar encontrado');
+    } else {
+        console.log(numbers[index]);  
+    }
 }
-console.log(maiorValor);
+// console.log(valorImpar); // exercicio 6
