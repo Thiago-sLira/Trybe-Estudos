@@ -12,9 +12,18 @@
 
 // console.log(resultado);
  
-let word = 'tryber';
-let wordReverse = '';
+// let word = 'tryber';
+// let wordReverse = '';
 
-for (let index = 0; index < word.length; index += 1) {
-  wordReverse += word[word.length - 1 - index];
-} console.log(wordReverse);
+// for (let index = 0; index < word.length; index += 1) {
+//   wordReverse += word[word.length - 1 - index];
+// } console.log(wordReverse);
+
+let word = 'tryber';
+let wordInvertida = '';
+
+for ( let i = word.length-1; i >= 0; i -= 1){
+  wordInvertida += word[i];
+}
+
+console.log(wordInvertida)
