@@ -60,24 +60,17 @@
 // } // exercicio 6
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27, 289];
-let menorValor = 100000;
+let menorValor = numbers[0];
 
 for (index = 0; index < numbers.length; index += 1) {
-    //menorValor = numbers[index]
-    if (numbers[index] < menorValor) {
+    if (numbers[index] < menorValor) { // DUVIDA!!!
         menorValor = numbers[index]
     }
 } console.log(menorValor);
 
 // let array = [];
 
-// for (index = 0; index <= 25; index =+ 1) {
-//     array.push(array[index]);
-// } console.log(array);
-
-// let word = 'tryber';
-// let wordInverse = '';
-
-// for (index = 0; index < word.length; index += 1) {
-//     wordInverse += word[word.length -1 - index];
-// } console.log(wordInverse); // exercicio 2 (4.3)
+// for (index = 0; index <= 25; index += 1) {
+//     array.push(index);
+// } 
+// console.log(array);
