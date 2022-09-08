@@ -5,57 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap-reboot.min.css">
 </head>
 
-<body>
-    <h1>Formulario</h1>
-    <form action="" method="get">
-        <label for="input-text">Digite seu nome</label>
-        <input type="text" placeholder="digite aqui" required name="texto" class="input" value="Thiago" id="input-text">
-        <button type="submit">Enviar</button>
+<body class="container">
+    <h1 class="display-1">FORMULÁRIO</h1>
+    <form action=""></form>
+    <div class=""> 
+        <label for="nome-completo" class="conteiner">Nome Completo:
+            <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+        </label>
         <br>
-        <textarea name="" id="" cols="30" rows="5">Comece a escrever</textarea>
-    </form>
+        <label for="input-email">Email:
+            <input type="email" name="email" id="input-email" placeholder="Digite seu email" required>
+        </label>
+    </div>
     <br>
-    <form action="" method="get">
-        <input type="checkbox" id="esporte-1" value="fut" name="esporte">Futebol
-        <input type="checkbox" id="esporte-2" value="vol" name="esporte">Volei
-        <input type="checkbox" id="esporte-3" value="pim" name="esporte">Pimbolim
-        <input type="checkbox" id="esporte-4" value="esp" name="esporte">E-sports
-        <br>
-        <br>
-        <label for="hub1">
-            <input type="radio" id="hub1" name="hub" value="sp">São Paulo</label>
-        <input type="radio" id="hub2" name="hub" value="bh">Belo Horizonte
-        <input type="radio" id="hub3" name="hub" value="fl">Florianópolis
-        <input type="radio" id="hub4" name="hub" value="mc">Macedônia
-    </form>
-    <br>
-    <br>
-    <form action="" method="get">
-        <select name="estado" id="dropdown-estado">
-            <option value="null">Escolha aqui</option>
+    <label for="">Estado onde você mora:
+        <select name="Estado" id="input-estado">
+            <option value="Esc" selected hidden disabled>Escolha seu estado</option>
             <option value="sp">São Paulo</option>
-            <option value="se">Sergipe</option>
-            <option value="al">Alagoas</option>
-            <option value="am">Amazonas</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="ap">Amapá</option>
+            <option value="rs">Rio Grande do Sul</option>
         </select>
+    </label>
+    <br>
+    <p>Selecione sua foto</p>
+    <input type="file" name="foto" id="foto-perfil">
     </form>
-    <form action="" method="get" enctype="multipart/form-data">
-        <br>
-        <br>
-        <p>Usuário</p>
-        <input type="text" name="" id="">
-        <p>Senha</p>
-        <input type="password" name="senha" required>
-        <p>Adicione seu arquivo</p>
-        <input type="file" name="" id="">
-        <br>
-        <br>
-        <button type="submit" class="" name="" id="">Enviar</button>
-    </form>
+    <br>
+    <p>Comidas favoritas</p>
+    <label for="comida1">
+        <input type="radio" id="comida1" name="comida-favorita" value="pizza">
+    </label>
+    <label for="comida2">
+        <input type="radio" id="comida2" name="comida-favorita" value="sorvete">
+    </label>
+    <label for="comida3">
+        <input type="radio" id="comida3" name="comida-favorita" value="pao-de-queijo">Pão de Queijo
+    </label>
+    <label for="comida4">
+        <input type="radio" id="comida4" name="comida-favorita" value="pizza">
+    </label>
 </body>
 
 </html>
