@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Exercício</title>
+</head>
+
+<body>
+    <header class="header-trybe">
+        <h1>Exercício</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s"
+            alt="simbolo-trybe">
+    </header>
+    <form action="" method="get">
+        <section class="hotel-form">
+            <label for="checkinInput">Data de checkin
+                <input type="date" class="inputCheckin" id="checkinInput">
+            </label>
+            <label for="checkoutInput">Data de checkout
+                <input type="date" class="inputCheckout" id="checkoutInput">
+            </label>
+        </section>
+        <section>
+            <label for="bedComum">
+                <input type="radio" class="bedroom" name="quarto" id="bedComum">Comum
+            </label>
+            <label for="bedClub">
+                <input type="radio" class="bedroom" name="quarto" id="bedClub">Club
+            </label>
+            <label for="bedLuxo">
+                <input type="radio" class="bedroom" name="quarto" id="bedLuxo">Luxo
+            </label>
+        </section>
+        <section class="hotel-form">
+            <select name="quartos" id="selectBed" class="nPessoas">
+                <option value="numero" selected disabled>Número de Pessoas</option>
+                <option value="um">1</option>
+                <option value="dois">2</option>
+                <option value="três">3</option>
+                <option value="quartro">4</option>
+            </select>
+        </section>
+        <section class="hotel-form">
+<textarea name="formHotel" id="hotelForm" cols="30" rows="10" placeholder="Escreva suas observações" class="obs"></textarea>
+        </section>
+        <button id="submit-btn">Enviar</button>
+    </form>
+    <section class="list-section">
+        <h4 id="h4">Lista de Reservas</h4>
+        <ol id="ol"></ol>
+        <button id="clear-btn">Limpar</button>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
