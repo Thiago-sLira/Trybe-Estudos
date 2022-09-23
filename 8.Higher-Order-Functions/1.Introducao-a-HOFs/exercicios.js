@@ -11,7 +11,7 @@ const register = (nomeCompleto) => {
     if(nomeCompleto === undefined) {
         return 'Preencha o campo!!';
     } 
-    const email = nomeCompleto.toLowerCase().split(' ').join('_');
+    const email = nomeCompleto.toLowerCase().replace(' ', '.');
     return { nomeCompleto, email: `${email}@trybe.com`};
 };
 
