@@ -61,7 +61,7 @@ const mageAttack = () => {
     }
     return dataMage;
 }
-console.log(mageAttack());
+// console.log(mageAttack());
 
 const gameActions = {
     warriorTurn: (warriorAttack) => {
