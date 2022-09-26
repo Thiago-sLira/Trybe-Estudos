@@ -61,4 +61,25 @@ const books = [
     },
   ];
   
-  // Adicione o código do exercício aqui:
+  function authorBornIn1947() {
+    const year = books.find((batata) => batata.author.birthYear === 1947);
+    return year.author.name;
+  }
+  console.log(authorBornIn1947());
+
+  //Retorne o nome do livro de menor nome
+  function smallerName() {
+    let nameBook = books[0].name;
+    books.forEach((batata) => {
+      if (batata.name.length < nameBook.length) {
+        nameBook = batata.name;
+  }});
+    return nameBook;
+  }
+  console.log(smallerName());
+
+books.forEach((book) => {
+    console.log(book.author.name.length);
+})
+
+ 
