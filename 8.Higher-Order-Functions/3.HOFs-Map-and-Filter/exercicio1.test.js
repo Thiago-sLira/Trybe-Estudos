@@ -1,4 +1,4 @@
-const getName = require('./exercicio1');
+const getName = require('./exercicio1.js');
 
 test('Deve retornar o nome do livro - gênero do livro - nome da pessoa autora', () => {
     expect(typeof getName).toBe('function');

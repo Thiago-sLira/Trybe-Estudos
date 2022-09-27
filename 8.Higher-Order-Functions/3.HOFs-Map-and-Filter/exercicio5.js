@@ -62,10 +62,11 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-const getName = () => {
-  const retorno = books.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`);
-return retorno;
-}
-console.log(getName());
 
-module.exports = getName;
+const arrayNames = () => {
+    return books.filter((object) => 
+       (object.genre === 'Fantasia' || object.genre === 'Ficção Científica'
+       ))
+       .map((value) => value.author.name).sort();
+}
+console.log(arrayNames());

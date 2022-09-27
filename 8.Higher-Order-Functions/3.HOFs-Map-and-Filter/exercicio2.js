@@ -62,10 +62,16 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-const getName = () => {
-  const retorno = books.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`);
-return retorno;
-}
-console.log(getName());
 
-module.exports = getName;
+const expectResult = (array) => {
+    return array
+    .map((element) => (
+     {
+        author: element.author.name,
+        age: element.releaseYear - element.author.birthYear,
+     }
+     ))
+    .sort((a, b) => a.age - b.age);
+}
+
+module.exports = expectResult;
