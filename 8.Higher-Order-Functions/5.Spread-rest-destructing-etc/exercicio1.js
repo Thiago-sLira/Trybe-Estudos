@@ -1,4 +1,4 @@
-const funcao = (saudacao) => console.log(saudacao); 
+const sumAll = (a, b) => a + b; 
 
-funcao('Oi');
-module.exports = funcao;
+console.log(sumAll(5, 6));
+module.exports = sumAll;

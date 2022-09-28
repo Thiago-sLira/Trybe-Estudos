@@ -1,8 +1,9 @@
-const { funcao } = require ('./exercicio1');
-console.log(funcao);
+const sumAll = require('./exercicio1');
+console.log(sumAll);
 
 describe('testando o teste', () => {
     it('testando o teste', () => {
-        expect(typeof funcao).toBe('function');
+        expect(typeof sumAll).toBe('function');
+        expect(sumAll(5, 5)).toEqual(10);
     })
 })
