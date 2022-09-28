@@ -5,11 +5,8 @@ const arrays = [
 ];
 
 function flatten(arr) {
-    // escreva seu código aqui
-    arr.reduce((acc, cur) => {
-        console.log(cur);
-        console.log(acc);
-        return acc;
-    })
+    return arr.reduce((acc, cur) => acc.concat(cur), []);
 }
 console.log(flatten(arrays));
+
+module.exports = flatten;
